@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>pizza</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+
+  <body>
+
+  <div id='navbar'>
+    <ul>
+     <li class='active'><a href="index.html"><span>Home</span></a></li>
+     <li><a href=#menu><span>menu</span></a></li>
+     <li><a href=#size><span>order</span></a></li>
+     <li class='last'><a href="contact.html"><span>Contact</span></a></li>
+    </ul>
+  </div>
+
+
+  <div class="home">
+    <div class="header">
+      <h1>something pizza place</h1>
+    </div>
+  </div>
+
+            <div id="menu">
+                  <div class="container">
+                        <h2>Our Toppings</h2>
+                      <div class="row">
+                      <div class="col-md-6">
+                        <p class="text-uppercase">
+                            bacon @ Ksh 100 <br>
+                            pineapple @ Ksh 100 <br>
+                            Mushroom @ Ksh 100 <br>
+                            chicken Pepper @ Ksh 100 <br>
+                            Peperoni @ Ksh 150 <br>
+                            olives @ Ksh 150 <br>
+                            green pepper @ Ksh 150 <br>
+                            extra cheese@ Ksh 150 <br>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+    <div class="container" id="size">
+      <h2>SELECT PIZZA SIZE</h2>
+      <select ng-model="myVar" class="form-control" class="col-md-4" >
+          <option value="small">SMALL
+          <option value="medium">MEDIUM
+          <option value="large">LARGE
+      </select>
+      <hr>
+        <div ng-switch="myVar">
+          <div ng-switch-when="small"
+              <div class="col-md-4">
+                <div class="content">
+                  <img border="0" src="images/image7.jpg" width="620" height="500">
+                </div>
+              </div>
+                <!-- Trigger/Open The Modal -->
+                  <button class="btn btn-danger" id="myBtn">Order small pizza</button>
+                    <!-- The Modal -->
+                      <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h4>order small pizza</h4>
+                            <span class="close">&times;</span>
+                          </div>
+                            <div class="modal-body">
+                              <div class="container">
+                                <div class="orders" id="order">
+                                  <h1 class="text-center" id="order-pizza">make order</h1>
+                                  <div class="form-group row">
+                                    <div class="col-sm-2"></div>
+                                    <div class="col-sm-8 order-overlay text-center">
+                                      <form class="col-sm-6 offset-sm-3 text-center">
+                                        <label for="crust">Select Crust:</label>
+                                        <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                          <option value="crispy">crispy @ Ksh. 100</option>
+                                          <option value="stuffed">stuffed @ Ksh. 150</option>
+                                          <option value="gluten">gluten free @ Ksh 200</option>
+                                        </select>
+                                      <label>Select Toppings</label>
+                                        <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                                              <option value="bacon">bacon @ Ksh 100</option>
+                                              <option value="pineapple">pineapple @ Ksh 100</option>
+                                              <option value="mushroom">Mushroom @ Ksh 100</option>
+                                              <option value="chicken">chicken Pepper @ Ksh 100</option>
+                                              <option value="peperoni">Peperoni @ Ksh 150</option>
+                                              <option value="olives">olives @ Ksh 150</option>
+                                              <option value="pepper">green pepper @ Ksh 150</option>
+                                              <option value="cheese">extra cheese@ Ksh 150</option>
+                                        </select>
+                                            <label for="number">Number of Pizza's</label>
+                                                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                                      </form>
+                                        <a href="#summary">
+                                          <button type="submit" class="btn btn-success checkout" id="checkout">
+                                            Checkout
+                                          </button>
+                                        </a>
+                                      </div>
+                                    <div class="col-sm-2"></div>
+                                  </div>
+                                </div>
+                              <div class="order-summary" id="sum-order">
+                                <h1 class="text-center" id="summary">Order</h1>
+                                <h2 class="text-center summary">you ordered:</h2>
+                                <ol id="list" class="text-center sum"></ol>
+                                  <div class="cdata-overlay">
+                                    <div class="customerdata row">
+                                      <div class="col-sm-3"></div>
+                                      <form action="" class="form-group col-sm-6 data">
+                                        <input type="text" class="form-control cdata" placeholder="name:">
+                                        <input type="text" class="form-control cdata" placeholder="phone number: ">
+                                        <input type="text" class="form-control cdata" placeholder="delivery location: ">
+                                        <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                                      </form>
+                                    <div class="col-sm-3"></div>
+                                  </div>
+                                </div>
+                                <div class="d-block mx-auto text-center">
+                                  <button class="deliver">Make Delivery</button>
+                                  <button class="pickup">Pick Up</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div ng-switch-when="medium">
+                          <div class="col-md-4">
+                            <div class="content">
+                              <img border="0" src="images/image11.jpeg" width="620" height="500">
+                            </div>
+                          </div>
+                          <!-- Trigger/Open The Modal -->
+                            <button class="btn btn-danger"  id="myBtn2">Order medium pizza</button>
+                            <!-- The Modal -->
+                              <div id="myModal2" class="modal">
+                                <!-- Modal content -->
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h4>order medium pizza</h4>
+                                    <span class="close">&times;</span>
+                                  </div>
+                                  <div class="modal-body">
+                                    <div class="container">
+                                      <div class="orders" id="order">
+                                        <h1 class="text-center" id="order-pizza">make order</h1>
+                                        <div class="form-group row">
+                                          <div class="col-sm-2"></div>
+                                          <div class="col-sm-8 order-overlay text-center">
+                                            <form class="col-sm-6 offset-sm-3 text-center">
+                                              <label for="crust">Select Crust:</label>
+                                              <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                                <option value="crispy">crispy @ Ksh. 100</option>
+                                                <option value="stuffed">stuffed @ Ksh. 150</option>
+                                                <option value="gluten">gluten free @ Ksh 200</option>
+                                              </select>
+                                              <label>Select Toppings</label>
+                                              <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                                                <option value="bacon">bacon @ Ksh 100</option>
+                                                <option value="pineapple">pineapple @ Ksh 100</option>
+                                                <option value="mushroom">Mushroom @ Ksh 100</option>
+                                                <option value="chicken">chicken Pepper @ Ksh 100</option>
+                                                <option value="peperoni">Peperoni @ Ksh 150</option>
+                                                <option value="olives">olives @ Ksh 150</option>
+                                                <option value="pepper">green pepper @ Ksh 150</option>
+                                                <option value="cheese">extra cheese@ Ksh 150</option>
+                                              </select>
+                                              <label for="number">Number of Pizza's</label>
+                                                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                                              </form>
+                                              <a href="#summary">
+                                                <button type="submit" class="btn btn-success checkout" id="checkout">
+                                                  Checkout
+                                                </button>
+                                              </a>
+                                            </div>
+                                            <div class="col-sm-2"></div>
+                                          </div>
+                                        </div>
+                                        <div class="order-summary" id="sum-order">
+                                          <h1 class="text-center" id="summary">Order</h1>
+                                          <h2 class="text-center summary">you ordered:</h2>
+                                          <ol id="list" class="text-center sum"></ol>
+                                          <div class="cdata-overlay">
+                                            <div class="customerdata row">
+                                              <div class="col-sm-3"></div>
+                                              <form action="" class="form-group col-sm-6 data">
+                                                <input type="text" class="form-control cdata" placeholder="name:">
+                                                <input type="text" class="form-control cdata" placeholder="phone number: ">
+                                                <input type="text" class="form-control cdata" placeholder="delivery location: ">
+                                                <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                                              </form>
+                                              <div class="col-sm-3"></div>
+                                            </div>
+                                          </div>
+                                          <div class="d-block mx-auto text-center">
+                                            <button class="deliver">Make Delivery</button>
+                                            <button class="pickup">Pick Up</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div ng-switch-when="large">
+                                <div class="col-md-4">
+                                  <div class="content">
+                                    <img border="0" src="images/image9.jpg" width="620" height="500">
+                                  </div>
+                                </div>
+                                <!-- Trigger/Open The Modal -->
+                                <button class="btn btn-danger" id="myBtn3">Order large pizza</button>
+                                <!-- The Modal -->
+                                <div id="myModal3" class="modal">
+                                  <!-- Modal content -->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h4>Order large Pizza</h4>
+                                      <span class="close">&times;</span>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="container">
+                                        <div class="orders" id="order">
+                                          <h1 class="text-center" id="order-pizza">make order</h1>
+                                          <div class="form-group row">
+                                            <div class="col-sm-2"></div>
+                                            <div class="col-sm-8 order-overlay text-center">
+                                              <form class="col-sm-6 offset-sm-3 text-center">
+                                                <label for="crust">Select Crust:</label>
+                                                <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                                  <option value="crispy">crispy @ Ksh. 100</option>
+                                                  <option value="stuffed">stuffed @ Ksh. 150</option>
+                                                  <option value="gluten">gluten free @ Ksh 200</option>
+                                                </select>
+                                                <label>Select Toppings</label>
+                                                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                                                  <option value="bacon">bacon @ Ksh 100</option>
+                                                  <option value="pineapple">pineapple @ Ksh 100</option>
+                                                  <option value="mushroom">Mushroom @ Ksh 100</option>
+                                                  <option value="chicken">chicken Pepper @ Ksh 100</option>
+                                                  <option value="peperoni">Peperoni @ Ksh 150</option>
+                                                  <option value="olives">olives @ Ksh 150</option>
+                                                  <option value="pepper">green pepper @ Ksh 150</option>
+                                                  <option value="cheese">extra cheese@ Ksh 150</option>
+                                                </select>
+                                                <label for="number">Number of Pizza's</label>
+                                                <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                                              </form>
+                                              <a href="#summary">
+                                                <button type="submit" class="btn btn-success checkout" id="checkout">
+                                                  Checkout
+                                                </button>
+                                              </a>
+                                            </div>
+                                            <div class="col-sm-2"></div>
+                                          </div>
+                                        </div>
+                                        <div class="order-summary" id="sum-order">
+                                          <h1 class="text-center" id="summary">Order</h1>
+                                          <h2 class="text-center summary">you ordered:</h2>
+                                          <ol id="list" class="text-center sum">
+                                          </ol>
+                                          <div class="cdata-overlay">
+                                            <div class="customerdata row">
+                                              <div class="col-sm-3"></div>
+                                              <form action="" class="form-group col-sm-6 data">
+                                                <input type="text" class="form-control cdata" placeholder="name:">
+                                                <input type="text" class="form-control cdata" placeholder="phone number: ">
+                                                <input type="text" class="form-control cdata" placeholder="delivery location: ">
+                                                <button class="btn bg-info text-center d-block mx-auto go">Make Delivery</button>
+                                              </form>
+                                              <div class="col-sm-3"></div>
+                                            </div>
+                                          </div>
+                                          <div class="d-block mx-auto text-center">
+                                            <button class="deliver">Make Delivery</button>
+                                            <button class="pickup">Pick Up</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div ng-switch-default>
+                                <p>pizza</p>
+                              </div>
+                            </div>
+                            <hr>
+                        </div>
+
+  <script src="js/main.js" charset="utf-8"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="js/scripts.js" charset="utf-8"></script>
+  </body>
+</html>
