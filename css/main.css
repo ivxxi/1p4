@@ -1,0 +1,312 @@
+@media screen and (min-width: 480px) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+
+html, body{
+  font-size: 20px;
+  background-color: black;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.home{
+  color: white;
+  text-align: center;
+  background:url("../images/image14.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  width:100%;
+}
+
+#body{
+  background:url("../images/sdd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1900px;
+  width:100%;
+}
+
+#menu{
+  color:gray;
+  background-color: black;
+}
+
+/*menu.html*/
+h1{
+  color: red;
+  text-align: center;
+}
+h3, a{
+  color: gray;
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+/*  html, body {
+  color: #555860;
+  background-color: black;
+}*/
+
+
+.header{
+  text-align: left;
+}
+
+
+#large{
+  color:gray;
+  text-align: center;
+
+}
+
+#medium{
+  color:gray;
+  text-align: center;
+
+}
+
+#small{
+  color:gray;
+  text-align: center;
+
+}
+
+.size{
+  color: black;
+}
+
+.deliver{
+  color: #fff;
+      background-color: pink;
+      border-color: #28a745;
+
+
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.pickup{
+  color: #fff;
+      background-color: aqua;
+      border-color: #28a745;
+
+
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.foot{
+    text-align: center;
+    margin-top: 50px;
+}
+#contact-us{
+  color: white;
+  text-align: center;
+  background:url("../images/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 900px;
+  width:100%;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;
+background-color: gray}
+
+h4{
+  text-align: center;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#navbar {
+  background: black;
+  width: auto;
+}
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+#navbar ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#navbar ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#navbar.align-right ul li {
+  float: right;
+}
+#navbar.align-center ul {
+  text-align: center;
+}
+#navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#navbar ul li a:hover {
+  color: #333333;
+}
+#navbar ul li a:hover:before {
+  width: 100%;
+}
+#navbar ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+#navbar ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#navbar ul li.last > a:after,
+#navbar ul li:last-child > a:after {
+  display: none;
+}
+#navbar ul li.active a {
+  color: #333333;
+}
+#navbar ul li.active a:before {
+  width: 100%;
+}
+#navbar.align-right li.last > a:after,
+#navbar.align-right li:last-child > a:after {
+  display: block;
+}
+#navbar.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #navbar ul li {
+    float: none;
+    display: block;
+  }
+  #navbar ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #navbar ul li.last > a,
+  #navbar ul li:last-child > a {
+    border: 0;
+  }
+  #navbar ul li a:after {
+    display: none;
+  }
+  #navbar ul li a:before {
+    display: none;
+  }
+}
